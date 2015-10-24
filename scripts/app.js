@@ -1,18 +1,18 @@
-var skillup = angular.module('skill-up-ng-app', ['ngRoute']);
+var spartanHackers = angular.module('skill-up-ng-app', ['ngRoute']);
 
-skillup.config(['$routeProvider',
+spartanHackers.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.when("/login", {
             templateUrl: "/login/login.html"
-        }).when("/home", {
-                templateUrl: "/home/home.html"
+        }).when("/admin", {
+                templateUrl: "/admin/admin.html"
             }).otherwise({
                 redirectTo: "/login"
             });
     }
 ]);
 
-skillup.controller("MainCtrl", ["$scope", "$http", function ($scope, $http) {
+spartanHackers.controller("MainCtrl", ["$scope", "$http", function ($scope, $http) {
     "use strict";
 
     var main = this;

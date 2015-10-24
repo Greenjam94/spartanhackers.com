@@ -1,17 +1,16 @@
 <div id="home" class="panel-body" data-ng-controller="HomeCtrl as home">
-    <h3>Welcome, {{home.user.name}}!</h3>
-    <h4>Favorite Games</h4>
-
-    <ul>
-        <!--
-            EXERCISE #8
-            Create an li for game in home.user.games
-            For each game, conditionally add a class of 'beat' based on the value the game's beat property
-            On click of the li, call home.changeGameStatus() in home.js
-        -->
-    </ul>
-
-    <input type="text" class="form-control" data-ng-model="home.newGame.title" placeholder="Game Title">
-    <button data-ng-click="home.addGame()" class="btn btn-success">Add Game</button><br>
-    <button data-ng-click="home.logout()" class="btn btn-danger">Logout</button>
+    <h3>Coders. Thinkers. Builders. Designers. Tinkerers.</h3>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>What is Spartan Hackers?</h2>
+            <p>Spartan Hackers exists to foster a community of technological innovation, collaboration, and creation at Michigan State University.</p>
+            <p>Check out our <a href="events.php">events page</a></p> 
+            <p>Find out more <a href="about.php">about</a> us </p> 
+            <p>Subscribe to our <a href="mailing_list.php">mailing list</a> for important updates</p>
+            <p>Like us on <a target="_blank" href="https://www.facebook.com/hack.at.state">facebook</a></p>
+            <p>Join our facebook group <a target="_blank" href="https://www.facebook.com/groups/529492683857277/">Hackers @ Michigan State</a></p>
+            <p>Follow us on <a target="_blank" href="https://twitter.com/spartanhackers">twitter</a></p>
+            <p>Hack on, Spartans.</p>
+        </div>
+    </div>
 </div>
