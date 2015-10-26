@@ -2,7 +2,24 @@
 
 This project was modeled after [Rich McLaughlin](https://github.com/RichMcL) and [Kevin McGinty](https://github.com/atomicframeworks) Vertafore Skill-Up 2015 East Lansing workshop
 
-# Instructions
+Tasks are posted on [Trello](https://trello.com/b/wrwq5XHu/spartan-hackers). Contact James for access. 
+
+# Restful Resources
+- workshops
+  - {id}
+    - attendees
+- hackathons
+  - {id}
+    - attendees
+- login
+
+# Static Pages
+- About
+- Home (Index)
+- Local Hack Day LHD
+- Contact
+
+# Dev Instructions
 - Install [NodeJS](https://nodejs.org/) 
   - This will include npm
 - Download [git](http://git-scm.com/downloads) to use the CLI

@@ -2,13 +2,16 @@ var spartanHackers = angular.module('skill-up-ng-app', ['ngRoute']);
 
 spartanHackers.config(['$routeProvider',
     function($routeProvider) {
-        $routeProvider.when("/login", {
+        $routeProvider
+        .when("/login", {
             templateUrl: "/login/login.html"
-        }).when("/admin", {
-                templateUrl: "/admin/admin.html"
+        })
+        .when("/home", {
+                templateUrl: "/home/home.html"
             }).otherwise({
                 redirectTo: "/login"
-            });
+            })
+        ;
     }
 ]);
 

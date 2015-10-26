@@ -1,4 +1,4 @@
-spartanHackers.controller("LoginCtrl", ["$scope", "$http", function ($scope, $http) {
+spartanHackers.controller("LoginCtrl", ["$scope", "$http", "$location", function ($scope, $http, $location) {
     "use strict";
 
     var login = this;
@@ -8,7 +8,7 @@ spartanHackers.controller("LoginCtrl", ["$scope", "$http", function ($scope, $ht
     login.submit = function(){
         $http.post("/login", login.user).then(function(res){
             console.log("logging in! going home");
-            window.location.href = "#/home";
+            $location.url("/home");//replace with angular?
         }, function(){
             alert("login failed");
         });
