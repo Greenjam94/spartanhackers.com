@@ -1,7 +1,0 @@
-# ToDos
-- Insecure Authorization on server.js
-- Encrypt users and passwords, store in DB?
-
-# Tips
-- Ignore node_modules
-- files automatically updated

@@ -1,0 +1,20 @@
+<div id="home" class="panel-body" data-ng-controller="WorkshopsCtrl as workshops">
+    <div class="panel panel-inverse">
+        <h2>Calendar of weekly workshops at Spartan hackers!</h2>
+        <p>Pull this from the workshop resource:</p>
+        <ul>
+        	<li>GET workshops: Get list of workshop events use in calendar widget</li>
+        	<li>POST/PUT workshops: Add new workshop</li>
+        </ul>
+
+        <p>Click an event, get a page from resource:</p>
+        <ul>
+        	<li>GET workshops/{id}: Get info about a workshop</li>
+        	<li>GET workshops/{id}/attendees: Get attendees</li>
+        	<li>POST workshops/{id}: Update info about a workshop</li>
+        	<li>POST workshops/{id}/attendee/{id}: Add user to attendees list IF event is going on.</li>
+        	<li>DELETE workshops/{id}: Remove workshop</li>
+        	<li>DELETE workshops/{id}/attendees/{id}:  Remove user from event (Yourself or admin only)</li>
+        </ul>
+    </div>
+</div>

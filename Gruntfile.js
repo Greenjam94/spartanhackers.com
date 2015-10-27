@@ -31,7 +31,7 @@ module.exports = function (grunt) {
                     cwd: ""
                 },
                 files: [
-                    'app.less'
+                    'css/app.less'
                 ],
                 tasks: ['less:project']
             }
@@ -42,7 +42,7 @@ module.exports = function (grunt) {
                 files: [
                     {
                         expand: true,
-                        src: ['app.less'],
+                        src: ['css/app.less'],
                         ext: '.css'
                     }
                 ]

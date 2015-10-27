@@ -1,0 +1,15 @@
+/* CSS last */
+#index.container {
+  padding: 0px;
+}
+.intro-body {
+  height: 500px;
+}
+.join-mailing-list {
+  text-align: center;
+  background-color: #333;
+}
+.panel-inverse {
+  background-color: #333;
+  padding: 1% 5% 0% 5%;
+}

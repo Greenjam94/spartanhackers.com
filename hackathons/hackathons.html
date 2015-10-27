@@ -1,0 +1,20 @@
+<div id="hackathons" class="panel-body" data-ng-controller="HackathonsCtrl as hackathons">
+    <div class="panel panel-inverse">
+        <h2>List of hackathons Spartan hackers is arranging teams and travel for!</h2>
+        <p>Pull this from the hackathons resource:</p>
+        <ul>
+        	<li>GET hackathons: Get list of hackathon events use in calendar widget</li>
+        	<li>POST/PUT hackathons: Add new hackathon</li>
+        </ul>
+
+        <p>Click an event, get a page from resource:</p>
+        <ul>
+        	<li>GET hackathons/{id}: Get info about a hackathon</li>
+        	<li>GET hackathons/{id}/attendees: Get attendees</li>
+        	<li>POST hackathons/{id}: Update info about a hackathon</li>
+        	<li>POST hackathons/{id}/attendee/{id}: Add user to attendees list IF event is going on.</li>
+        	<li>DELETE hackathons/{id}: Remove hackathon</li>
+        	<li>DELETE hackathons/{id}/attendees/{id}:  Remove user from event (Yourself or admin only)</li>
+        </ul>
+    </div>
+</div>

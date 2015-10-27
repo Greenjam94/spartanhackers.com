@@ -4,52 +4,70 @@
     <title>MSU Spartan Hackers</title>
     <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="/app.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/simple-sidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/grayscale.css">
+    <link rel="icon"  type="image/png" href="/images/favicon.png">
 
     <script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
     <script type="text/javascript" src="/node_modules/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="/scripts/app.js"></script>
-    <script type="text/javascript" src="/login/login.js"></script>
+    <script type="text/javascript" src="/hackathons/hackathons.js"></script>
     <script type="text/javascript" src="/home/home.js"></script>
+    <script type="text/javascript" src="/login/login.js"></script>
+    <script type="text/javascript" src="/workshops/workshops.js"></script>
 </head>
 <body data-ng-controller="MainCtrl as main">
     
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="#/home">
-                Spartan Hackers V2.0.0
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden">
-                    <a href="#page-top"></a>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                    <a href="/#/home">
+                        Spartan Hackers v2.0
+                    </a>
                 </li>
-                <li>
-                    <a class="page-scroll light" href="#/about">About</a>
-                </li>
-                <li>
-                    <a class="page-scroll light" href="#/events">Events</a>
-                </li>
-                <li>
-                    <a class="page-scroll light" href="#/lhd">LHD</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+            <li>
+                <a href="/#/about">About</a>
+            </li>
+            <li>
+                <a href="/#/contact">Contact</a>
+            </li>
+            <li>
+                <a href="/#/hackathons">Hackathons</a>
+            </li>
+            <li>
+                <a href="/#/workshops">Workshops</a>
+            </li>
+            <li>
+                <a href="/#/lhd">LHD</a>
+            </li>
+        </ul>
     </div>
-    <!-- /.container -->
-</nav>
+    <!-- /#sidebar-wrapper -->
 
-<div id="index" class="container">
-    <data-ng-view></data-ng-view>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div id="index" class="container">
+            <header class="intro">
+                <div class="intro-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <h1 class="brand-heading"><img src="images/spartan-hackers-banner.png"></h1>
+                                <p class="intro-text">Coders. Thinkers. Builders. Designers. Tinkerers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="join-mailing-list">
+                <p>Join our mailing list <a href="">by clicking here</a></p>
+            </div>
+            <data-ng-view></data-ng-view>
+        </div>
+    </div>
 </div>
 
 </body>
