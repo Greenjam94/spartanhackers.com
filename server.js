@@ -19,13 +19,16 @@ var users = [
 
 var authenticatedUser;
 
-/*
- * Create a resource for /heartbeat to test Express
- 
+//Rest Resources
+var workshops = require('./restResources/workshops');
+
+
+/* Create a resource for /heartbeat to test Express
 app.get("/heartbeat", function (req, res) {
-    res.status(200).send({heartbeat: 'Still alive'});
+    res.status(200).send({heartbeat: 'Server.js Still alive'});
 });
 */
+
 
 app.post("/login", function (req, res) {
     var user = req.body;
@@ -61,6 +64,8 @@ app.get("/users/current", function (req, res) {
         res.status(404).send();
     }
 });
+
+app.use('/workshops', workshops);
 
 app.listen(port);
 console.log('Listening on: port ' + port);

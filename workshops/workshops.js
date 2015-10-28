@@ -11,6 +11,14 @@ spartanHackers.controller("WorkshopsCtrl", ["$scope", "$http", function ($scope,
         window.location.href = "#/login";
     });
 
+    $http.get("/workshops").then(function(res){
+        console.log(res.data);
+    });
+
+    $http.get("/heartbeat").then(function(res){
+        console.log(res.data);
+    })
+
     // workshops.logout = function(){
     //     $http.post("/logout").then(function(res){
     //         if (res.status === 200) {
