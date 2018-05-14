@@ -1,10 +1,10 @@
 # Spartan Hackers Website
 
-This project was modeled after [Rich McLaughlin](https://github.com/RichMcL) and [Kevin McGinty](https://github.com/atomicframeworks) Vertafore Skill-Up 2015 East Lansing workshop
+This repo is archived since it's no longer actively used for the website. When another webmaster took over, they redid the wedsite entirely and this repo hasn't been used since.
 
-Tasks are posted on [Trello](https://trello.com/b/wrwq5XHu/spartan-hackers). Contact James for access. 
+This project was modeled after [Rich McLaughlin](https://github.com/RichMcL) and [Kevin McGinty](https://github.com/atomicframeworks) Vertafore Skill-Up 2015 East Lansing workshop 
 
-# Restful Resources
+# REST endpoints
 - workshops
   - {id}
     - attendees
